@@ -1,0 +1,14 @@
+[% WRAPPER "layouts/default.html.tt" %]
+
+<h1>MP3アップロード</h1>
+
+[% IF c.flash('message') %]
+[% c.flash('message') %]
+[% END %]
+
+<form action="[% c.url_for('upload') %]" method="post" enctype="multipart/form-data">
+  <input type="file" name="music" />
+  <input type="submit" value="アップロード" />
+</form>
+
+[% END %]

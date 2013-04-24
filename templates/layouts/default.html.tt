@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+	<title>[% title %]</title>
+	[% c.stylesheet('/bootstrap/css/bootstrap.min.css') %]
+  </head>
+  <body>
+    <div class="container">[% content %]</div>
+  </body>
+</html>
